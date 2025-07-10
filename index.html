@@ -122,6 +122,11 @@
             padding: 40px;
             color: #6c757d;
         }
+
+        /* --- Hide Important Dates --- */
+        #dates-section {
+            display: none;
+        }
     </style>
 </head>
 
@@ -144,8 +149,8 @@
                 <tr>
                     <td><a class="menulink active" data-page="home">Home</a></td>
                     <td><a class="menulink" data-page="organizers">Organizers</a></td>
-                    <td><a class="menulink" data-page="submission">Call for Talks</a></td>
                     <td><a class="menulink" data-page="program">Program</a></td>
+                    <td><a class="menulink" data-page="submission">Call for Participation</a></td>
                     <td><a class="menulink" data-page="registration">Registration</a></td>
                 </tr>
             </tbody>
@@ -170,12 +175,14 @@
                         <img src="QSpatial-logo.png" alt="Workshop Image" style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 20px;">
                     </p>
                     <!-- ============================================== -->
-                    <h2 id="dates">Important Dates</h2>
-                    <ul>
-                        <li><b>Lighting Talk Submission:</b><br>September 15, 2025</li>
-                        <li><b>Notification of Decision:</b><br>September 23, 2025</li>
-                        <li><b>Backup Recorded Version:</b><br>November 1, 2025</li>
-                    </ul>
+                    <div id="dates-section">
+                        <h2 id="dates">Important Dates</h2>
+                        <ul>
+                            <li><b>Lighting Talk Submission:</b><br>September 15, 2025</li>
+                            <li><b>Notification of Decision:</b><br>September 23, 2025</li>
+                            <li><b>Backup Recorded Version:</b><br>November 1, 2025</li>
+                        </ul>
+                    </div>
                 </td>
                 
                 <!-- ================== RIGHT COLUMN (DYNAMIC CONTENT AREA) =================== -->
@@ -226,79 +233,39 @@
                             <li style="margin-bottom: 25px; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #005a9c;">
                                 <h3 style="margin-top: 0; color: #003366;">Ibrahim Sabek</h3>
                                 <p><strong>Assistant Professor of Computer Science and Spatial Sciences</strong><br>
-                                University of Southern California, USC Spatial Sciences Institute, Los Angeles, USA</p>
+                                USC Spatial Sciences Institute<br>
+                                University of Southern California, Los Angeles, USA</p>
                                 <p>Email: <a href="mailto:sabek@usc.edu">sabek@usc.edu</a></p>
                             </li>
                             <li style="margin-bottom: 25px; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #005a9c;">
                                 <h3 style="margin-top: 0; color: #003366;">Amr Magdy</h3>
                                 <p><strong>Associate Professor of Computer Science and Engineering</strong><br>
-                                University of California, Riverside, UCR Center for GeoSpatial Sciences, USA</p>
+                                UCR Center for GeoSpatial Sciences<br>
+                                University of California, Riverside, USA</p>
                                 <p>Email: <a href="mailto:amr@cs.ucr.edu">amr@cs.ucr.edu</a></p>
                             </li>
-                        </ul>
-                    </div>
-
-                    <!-- =========== SUBMISSION SECTION =========== -->
-                    <div id="submission" class="content-section">
-                        <h2>Call for Lightning Talks</h2>
-                        <p>We invite proposals for short lighting talks in the context of quantum spatial applications and systems. This call is open to everyone interested in sharing their work, ideas, or vision.</p>
-                        
-                        <h3>Submission Guidelines</h3>
-                        <p>Details on the format and submission procedure for lightning talks will be announced soon. Please check back for updates.</p>
-                        
-                        <h3>Topics of Interest</h3>
-                        <p>We welcome lightning talks on (but not limited to) the following topics:</p>
-                        <ul>
-                            <li>Quantum algorithms for spatial data processing</li>
-                            <li>Quantum machine learning for geographic information systems</li>
-                            <li>Quantum-inspired optimization for spatial problems</li>
-                            <li>Quantum sensing and positioning technologies</li>
-                            <li>Quantum computing applications in transportation and logistics</li>
-                            <li>Quantum annealing for spatial optimization problems</li>
-                        </ul>
-                        
-                        <h3>Important Dates</h3>
-                        <ul>
-                            <li><strong>Lightning Talk Submission:</strong> September 15, 2025</li>
-                            <li><strong>Notification of Decision:</strong> September 23, 2025</li>
-                            <li><strong>Backup Recorded Version:</strong> November 1, 2025</li>
                         </ul>
                     </div>
 
                     <!-- =========== PROGRAM SECTION =========== -->
                     <div id="program" class="content-section">
                         <h2>Workshop Program</h2>
-                        <p>Below is our proposed schedule for the Q-Spatial 2025 workshop. The program is designed to provide both introductory material for newcomers and advanced content for experienced researchers.</p>
+                        <p>The detailed workshop program will be added soon. The program is designed to provide both introductory material for newcomers and advanced content for experienced researchers. It will consist of:</p>
                         
-                        <table class="schedule-table">
-                            <thead>
-                                <tr><th colspan="2">Morning Schedule (3.5 hours)</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>09:00 - 09:15</td><td>Opening Remarks and Workshop Scope (Amr)</td></tr>
-                                <tr><td>09:15 - 10:30</td><td>Introduction to Quantum Technologies and Quantum Computing (Moustafa)</td></tr>
-                                <tr class="break"><td colspan="2">Break (30 minutes)</td></tr>
-                                <tr><td>11:00 - 12:00</td><td>Introduction to Quantum Annealing and QUBO/DQM/CQM Modeling (Ibrahim/Amr)</td></tr>
-                                <tr><td>12:00 - 12:30</td><td>Quantum Spatial Data Management: A Use Case on Query Optimization (Ibrahim)</td></tr>
-                            </tbody>
-                        </table>
-                        
-                        <br>
-                        
-                        <table class="schedule-table">
-                            <thead>
-                                <tr><th colspan="2">Afternoon Schedule (5 hours)</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>14:00 - 15:00</td><td>Keynote Talk (by DWave or Quantinuum company or a key quantum scientist)</td></tr>
-                                <tr class="break"><td colspan="2">Break (15 minutes)</td></tr>
-                                <tr><td>15:15 - 16:15</td><td>Examples of Quantum Algorithms (Moustafa)</td></tr>
-                                <tr><td>16:15 - 16:45</td><td>Quantum Positioning and Navigation Systems (Moustafa)</td></tr>
-                                <tr class="break"><td colspan="2">Break (15 minutes)</td></tr>
-                                <tr><td>17:00 - 18:30</td><td>Quantum Computing in Action: Python libraries and/or simulators (Amr and PhD students)</td></tr>
-                                <tr><td>18:30 - 19:00</td><td>Open Research Directions (All) & Closing Remarks</td></tr>
-                            </tbody>
-                        </table>
+                        <ul>
+                            <li><strong>Tutorials for newcomers</strong> on both quantum gate model and quantum annealing for optimization problems.</li>
+                            <li>Invited talks by experts from industry and the research community.</li>
+                            <li><strong>Hands-on session</strong> for programming on quantum computers.</li>
+                            <li><strong>Real use cases</strong> for quantum computing and technologies in spatial data systems and applications.</li>
+                            <li>Introduction to <strong>Quantum Machine Learning</strong> and its libraries and tools.</li>
+                            <li>Open discussion session for brainstorming a community vision for future steps of quantum computing within ACM SIGSPATIAL.</li>
+                        </ul>
+                    </div>
+
+                    <!-- =========== SUBMISSION SECTION =========== -->
+                    <div id="submission" class="content-section">
+                        <h2>Call for Participation</h2>
+                        <p>To be added</p>
                     </div>
 
                     <!-- =========== REGISTRATION SECTION =========== -->
@@ -318,6 +285,33 @@
         <p>&copy; 2025 Q-Spatial Workshop Organizers. All Rights Reserved.</p>
     </div>
 </div>
+
+<!--
+BACKUP - Original Call for Lightning Talks content:
+<h2>Call for Lightning Talks</h2>
+<p>We invite proposals for short lighting talks in the context of quantum spatial applications and systems. This call is open to everyone interested in sharing their work, ideas, or vision.</p>
+
+<h3>Submission Guidelines</h3>
+<p>Details on the format and submission procedure for lightning talks will be announced soon. Please check back for updates.</p>
+
+<h3>Topics of Interest</h3>
+<p>We welcome lightning talks on (but not limited to) the following topics:</p>
+<ul>
+    <li>Quantum algorithms for spatial data processing</li>
+    <li>Quantum machine learning for geographic information systems</li>
+    <li>Quantum-inspired optimization for spatial problems</li>
+    <li>Quantum sensing and positioning technologies</li>
+    <li>Quantum computing applications in transportation and logistics</li>
+    <li>Quantum annealing for spatial optimization problems</li>
+</ul>
+
+<h3>Important Dates</h3>
+<ul>
+    <li><strong>Lightning Talk Submission:</strong> September 15, 2025</li>
+    <li><strong>Notification of Decision:</strong> September 23, 2025</li>
+    <li><strong>Backup Recorded Version:</strong> November 1, 2025</li>
+</ul>
+-->
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -365,8 +359,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const titles = {
             'home': 'Q-Spatial 2025 - Home',
             'organizers': 'Q-Spatial 2025 - Organizers', 
-            'submission': 'Q-Spatial 2025 - Call for Talks',
             'program': 'Q-Spatial 2025 - Program',
+            'submission': 'Q-Spatial 2025 - Call for Participation',
             'registration': 'Q-Spatial 2025 - Registration'
         };
         
